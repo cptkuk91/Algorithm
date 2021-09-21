@@ -22,3 +22,5 @@ BaekJoon - Node.js
 ⭐️ No. 2438 (별 찍기 - 1)
 ⭐️ No. 2439 (별 찍기 - 2)
 ⭐️ No. 10871 (X보다 작은 수)
+
+⭐️ No. 10952 (A+B -5) -> Solve by for

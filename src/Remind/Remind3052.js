@@ -14,8 +14,11 @@ let restNum = numbers.map(function (num) {
 
 let digit = [];
 
+//공부해라
 restNum.forEach(function (num) {
     if (digit.indexOf(num) === -1) {
+        // 없으면 넣는다.
+        // 이미 들어가 있으면 안넣는다.
         digit.push(num);
     }
 })

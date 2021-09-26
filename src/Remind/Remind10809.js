@@ -1,29 +1,17 @@
 let fs = require('fs');
+let input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
-let input = fs.readFileSync('/dev/stdin').toString().split(' ');
+// 단어에 포함되어 있는 경우에는 처음 등장하는 위치를, 포함되어 있지 않은 경우에는 -1을 출력하는 프로그램을 작성하시오.
+// 이를 통해서 indexOf 를 사용해야하는 걸 알 수 있다.
 
-let resultArr = [];
 let result = '';
 
-for(let i = 97; i <= 122; i++){
-    let alphabet = String.fromCharCode(i);
-    // a,b,c,d,e,f,g,h...z
-
-    // baekjoon
-    // [0] = b
-    // [1] = a
-    // [2] = e
-    // [3] = k
-    for(let j = 0; j < input.length; j++){
-        resultArr.push(input[j].indexOf(alphabet));
-        // indexOf 를 통해 나머지 값을 -1 로 출력
-        // a, b, c, d, e, f, g, ...
-        // b = 0; a = 1; e = 2;
-        // -1 -1 -1 -1 -1 -1 -1 -1...
-        // 1   0 -1 -1 2 ...
-    }
+for (let i = 97; i <= 122; i++) {
+    // a 부터 z 까지 출력해야한다.
+    let index = input[0].indexOf(String.fromCharCode(i));
+    // input[0] 값에서 a 의 위치를 찾고, 없을 경우 indexOf 를 통해 자동 -1 로 반환된다.
+    // indexOf 에 특별한 조건을 안줄 경우 첫 숫자를 찾는다.
+    result += index + ' ';
 }
 
-result = resultArr.join('');
 console.log(result);
-

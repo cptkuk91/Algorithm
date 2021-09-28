@@ -21,5 +21,4 @@ for (let i = 1; i <= firstCase; i++) {
     // 다 돌면 엔터를 준다.
     result += '\n';
 }
-
 console.log(result);

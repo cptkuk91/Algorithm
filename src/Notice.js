@@ -1,11 +1,9 @@
+let s = 10
+for(let i = 0; i < s; i++){
+    console.log(s);
+}
+
 /*
-안녕하세요.
-
-최근에는 velog.io 에서 기본기 공부를 하고 있습니다!
-
-제 능력으로 풀 수 있는 레벨까지 도달해서 좀 더 공부하고 돌아오겠습니다!
-
-감사합니다.
-
-https://velog.io/@cptkuk91
+velog.io/cptkuk91
+글 많이 작성했습니다.
  */

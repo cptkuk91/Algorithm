@@ -1,5 +1,1 @@
-let user = {
-    name: null,
-};
-
-let admin = user;
+// 드림코딩 by 엘리 8강까지 들었습니다.

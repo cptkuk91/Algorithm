@@ -8,11 +8,9 @@ function solution(answers) {
     if (tester1[i % tester1.length] === answers[i]) {
       result[0]++;
     }
-
     if (tester2[i % tester2.length] === answers[i]) {
       result[1]++;
     }
-
     if (tester3[i % tester3.length] === answers[i]) {
       result[2]++;
     }

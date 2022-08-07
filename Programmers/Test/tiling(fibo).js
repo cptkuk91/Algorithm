@@ -8,7 +8,7 @@ function solution(n) {
     if (arr[i] <= 2) {
       return arr[n];
     }
-    arr[i] = fibo[i - 1] + fibo[i - 2];
+    arr[i] = fibo(i - 1) + fibo(i - 2);
     return arr[i];
   };
   return fibo(n);

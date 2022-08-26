@@ -3,6 +3,7 @@ const binarySearch = function (arr, target) {
   let left = 0;
   let right = arr.length - 1;
 
+  // while문을 활용한 binarySearch
   while (left <= right) {
     let middle = parseInt((left + right) / 2);
 

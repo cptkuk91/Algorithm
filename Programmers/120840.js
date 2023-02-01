@@ -12,7 +12,7 @@
 // }
 
 function solution(balls, share) {
-  return factorial(balls) / (factorial(balls - share) - factorial(share));
+  return factorial(balls) / (factorial(balls - share) * factorial(share));
 }
 
 function factorial(number) {
